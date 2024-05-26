@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/totalAttemptsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Quiz Attempts: 0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/usernameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/totalCorrectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Correct Answers: 0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/totalAttemptsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/incorrectanswersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage of Correct Answers: 0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/totalCorrectTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/incorrectanswersTextView"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:id="@+id/BackToHome"/>
+
+
+
+    <!-- Add more TextViews for additional profile data if needed -->
+
+</RelativeLayout>

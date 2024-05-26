@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etQuizId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Quiz ID"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etQuizTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuizId"
+        android:hint="Quiz Title"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etQuizSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuizTitle"
+        android:hint="Quiz Subtitle"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etQuizTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuizSubtitle"
+        android:hint="Quiz Time (in minutes)"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSaveQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuizTime"
+        android:text="Save Quiz"/>
+
+    <Button
+        android:id="@+id/btnAddQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuizId"
+        android:layout_marginTop="134dp"
+        android:layout_marginLeft="200dp"
+        android:text="Add Question" />
+
+
+</RelativeLayout>
+
+

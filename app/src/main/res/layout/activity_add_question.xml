@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddQuestionActivity">
+
+    <!-- EditText for Quiz ID -->
+    <EditText
+        android:id="@+id/etQuizId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quiz ID"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- EditText for Question -->
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Question"
+        android:layout_below="@id/etQuizId"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- EditTexts for Options -->
+    <EditText
+        android:id="@+id/etOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 1"
+        android:layout_below="@id/etQuestion"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 2"
+        android:layout_below="@id/etOption1"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 3"
+        android:layout_below="@id/etOption2"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etOption4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 4"
+        android:layout_below="@id/etOption3"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText for Correct Option -->
+    <EditText
+        android:id="@+id/etCorrectOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correct Option"
+        android:layout_below="@id/etOption4"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to Save Question -->
+    <Button
+        android:id="@+id/btnSaveQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Question"
+        android:layout_below="@id/etCorrectOption"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
