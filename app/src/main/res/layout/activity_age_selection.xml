@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/_k_earth_rotating_half_hour_loop_relaxing_screensaver" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Age Group"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#80000000"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+        <!-- Radio Group -->
+        <RadioGroup
+            android:id="@+id/age_group_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#80000000"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children (5-14 years)"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radio_teenagers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teenagers (15-19 years)"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radio_adults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adults (20-64 years)"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radio_seniors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seniors (65+ years)"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
+</FrameLayout>
